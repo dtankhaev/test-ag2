@@ -74,7 +74,8 @@ with llm_config:
 
 human = UserProxyAgent(
     name="CTO",
-    system_message="Ты CTO стартапа. Отвечай на вопросы честно.",
+    system_message="You are the CTO of a startup. \
+    Answer the questions honestly.",
     human_input_mode="ALWAYS",
     code_execution_config={"work_dir": "coding",
                            "use_docker": False})
@@ -86,7 +87,7 @@ pattern = AutoPattern(
     group_manager_args={"llm_config": llm_config},
 )
 
-initial_prompt = "Я CTO. Хочу провести аудит процессов команды."
+initial_prompt = "I’m the CTO. I want to run an audit of the team’s processes."
 
 result, _, _ = initiate_group_chat(
     pattern=pattern,
