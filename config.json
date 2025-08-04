@@ -1,0 +1,20 @@
+[
+  {
+    "api_type": "openai",
+    "model": "gpt-4o",
+    "api_key": "API_KEY",
+    "tags": [
+      "powerful",
+      "expensive"
+    ]
+  },
+  {
+    "api_type": "openai",
+    "model": "gpt-4o-mini",
+    "api_key": "API_KEY",
+    "tags": [
+      "cheap",
+      "fast"
+    ]
+  }
+]
